@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "slug": "template",
+      "packageName": "@ld/app-template",
+      "path": "apps/template",
+      "deployable": false
+    },
+    {
+      "slug": "ld-review",
+      "packageName": "@ld/app-ld-review",
+      "path": "apps/ld-review",
+      "deployable": false
+    }
+  ]
+}

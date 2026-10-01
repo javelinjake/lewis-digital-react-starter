@@ -1,0 +1,7 @@
+@import "@ld/ui/globals.css";
+
+@custom-variant fullscreen (&:fullscreen);
+
+@source "../";
+@source "../../node_modules/@ld/ui/src";
+@source "../../node_modules/@ld/video/src";

@@ -1,0 +1,43 @@
+{
+  "name": "@ld/video",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./mux": "./src/mux/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit -p tsconfig.json",
+    "ts": "tsc --noEmit -p tsconfig.json",
+    "test:unit": "vitest run --passWithNoTests",
+    "lint": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "@ld/ui": "workspace:*",
+    "lucide-react": "catalog:",
+    "zustand": "catalog:"
+  },
+  "peerDependencies": {
+    "@mux/mux-video-react": "catalog:",
+    "@mux/playback-core": "catalog:",
+    "react": "catalog:"
+  },
+  "peerDependenciesMeta": {
+    "@mux/mux-video-react": {
+      "optional": true
+    },
+    "@mux/playback-core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@ld/config-typescript": "workspace:*",
+    "@mux/mux-video-react": "catalog:",
+    "@mux/playback-core": "catalog:",
+    "@types/react": "^19.1.13",
+    "react": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

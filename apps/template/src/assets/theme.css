@@ -1,0 +1,4 @@
+:root {
+  --primary: oklch(0.45 0.12 250);
+  --primary-foreground: oklch(0.985 0 0);
+}

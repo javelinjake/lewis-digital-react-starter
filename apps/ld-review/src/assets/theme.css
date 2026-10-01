@@ -1,0 +1,59 @@
+:root,
+.dark {
+  --background: #081522;
+  --foreground: #f4f4fa;
+  --card: #0e1e2c;
+  --card-foreground: #f4f4fa;
+  --popover: #0e1e2c;
+  --popover-foreground: #f4f4fa;
+  --primary: #f34eae;
+  --primary-foreground: #081522;
+  --secondary: #152738;
+  --secondary-foreground: #f4f4fa;
+  --muted: #152738;
+  --muted-foreground: #a9b4cc;
+  --accent: #25233f;
+  --accent-foreground: #c7b5ff;
+  --destructive: #ff6868;
+  --border: #2b3e50;
+  --input: #081522;
+  --ring: #9470f4;
+  --radius: 8px;
+  --sidebar: #0e1e2c;
+  --sidebar-foreground: #f4f4fa;
+  --sidebar-primary: #f34eae;
+  --sidebar-primary-foreground: #081522;
+  --sidebar-accent: #152738;
+  --sidebar-accent-foreground: #f4f4fa;
+  --sidebar-border: #2b3e50;
+  --sidebar-ring: #9470f4;
+  --surface-canvas: #081522;
+  --surface-default: #0e1e2c;
+  --surface-hover: #152738;
+  --surface-selected: #25233f;
+  --surface-disabled: #20303e;
+  --surface-success: #102e2d;
+  --surface-error: #351d29;
+  --action-hover: #ff6bbd;
+  --action-pressed: #e447a2;
+  --action-destructive-hover: #ff8585;
+  --text-disabled: #718197;
+  --border-hover: #465d74;
+  --focus-on-action: #081522;
+  --selection: #9470f4;
+  --selection-text: #c7b5ff;
+  --trim: #ff8736;
+  --trim-surface: #39281e;
+  --status-success: #2ec4a7;
+  --status-error: #ff6868;
+  --radius-control: 8px;
+  --radius-panel: 12px;
+  --radius-pill: 24px;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--background);
+  color: var(--foreground);
+}

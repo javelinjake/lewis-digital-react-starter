@@ -1,0 +1,16 @@
+{
+  "extends": "./base.json",
+  "compilerOptions": {
+    "paths": {
+      "@ld/directus": ["../directus/src/index.ts"],
+      "@ld/directus/*": ["../directus/src/*"],
+      "@ld/ui": ["../ui/src/index.ts"],
+      "@ld/ui/*": ["../ui/src/*"],
+      "@ld/utils/*": ["../utils/src/*"],
+      "@ld/react-utils": ["../react-utils/src/index.ts"],
+      "@ld/forms": ["../forms/src/index.ts"],
+      "@ld/video": ["../video/src/index.ts"],
+      "@ld/video/mux": ["../video/src/mux/index.ts"]
+    }
+  }
+}

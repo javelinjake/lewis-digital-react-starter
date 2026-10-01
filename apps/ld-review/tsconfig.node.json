@@ -1,0 +1,15 @@
+{
+  "extends": "../../packages/config-typescript/node.json",
+  "compilerOptions": {
+    "composite": false,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts",
+    "playwright.config.ts",
+    "eslint.config.ts",
+    "scripts/**/*.ts"
+  ]
+}

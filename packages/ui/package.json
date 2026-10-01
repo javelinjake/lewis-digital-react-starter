@@ -1,0 +1,45 @@
+{
+  "name": "@ld/ui",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "imports": {
+    "#lib/*": "./src/lib/*.ts",
+    "#components/*": "./src/components/*.tsx"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./globals.css": "./src/styles/globals.css",
+    "./lib/utils": "./src/lib/utils.ts",
+    "./components/*": "./src/components/*.tsx"
+  },
+  "scripts": {
+    "build": "tsc --noEmit -p tsconfig.json",
+    "ts": "tsc --noEmit -p tsconfig.json",
+    "test:unit": "vitest run --passWithNoTests",
+    "lint": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "@base-ui/react": "catalog:",
+    "class-variance-authority": "catalog:",
+    "clsx": "catalog:",
+    "lucide-react": "catalog:",
+    "shadcn": "catalog:",
+    "sonner": "catalog:",
+    "tailwind-merge": "catalog:",
+    "tw-animate-css": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@ld/config-typescript": "workspace:*",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
