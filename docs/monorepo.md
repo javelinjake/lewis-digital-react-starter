@@ -16,6 +16,7 @@ lewis-react-platform/
     utils/         @ld/utils — pure TypeScript utilities
     react-utils/   @ld/react-utils — reusable hooks
     directus/      @ld/directus — Directus plumbing
+    video/         @ld/video — synced playback; @ld/video/mux for Mux
     config-*/      Shared ESLint, TS, Vite, Vitest, Playwright config
   tooling/
     create-app/

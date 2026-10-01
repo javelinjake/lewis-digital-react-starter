@@ -24,6 +24,6 @@ Dev defaults to `mock` when `VITE_DATA_MODE` is unset. Any other unknown value t
 
 `pages` and `routes` may import features. Features may not import each other. Shared folders may not import features or pages.
 
-`@ld/ui` does not import React Hook Form, TanStack Query, Zustand, or Directus. Form fields live in `@ld/forms`.
+`@ld/ui` does not import React Hook Form, TanStack Query, Zustand, or Directus. Form fields live in `@ld/forms`. Synced playback lives in `@ld/video`. Review moments stay in the app.
 
 Pages should stay small. The architecture check enforces 500 lines.

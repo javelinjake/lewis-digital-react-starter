@@ -1,13 +1,14 @@
 # Shared packages
 
-| Package | Responsibility |
-|---------|----------------|
-| `@ld/ui` | shadcn/ui primitives, toast, and the token CSS |
-| `@ld/forms` | React Hook Form + Valibot fields, plus a dirty-form flag |
-| `@ld/react-utils` | Theme and pagination hooks |
-| `@ld/directus` | Directus client, errors, pagination |
-| `@ld/utils` | Framework-free helpers |
-| `@ld/config-*` | ESLint, TypeScript, Vite, Vitest, Playwright |
+| Package           | Responsibility                                                                                       |
+| ----------------- | ---------------------------------------------------------------------------------------------------- |
+| `@ld/ui`          | shadcn/ui primitives, toast, and the token CSS                                                       |
+| `@ld/forms`       | React Hook Form + Valibot fields, plus a dirty-form flag                                             |
+| `@ld/react-utils` | Theme and pagination hooks                                                                           |
+| `@ld/directus`    | Directus client, errors, pagination                                                                  |
+| `@ld/utils`       | Framework-free helpers                                                                               |
+| `@ld/video`       | Synced playback: provider, HTML surface, transport, and seek bar. `@ld/video/mux` is the Mux surface |
+| `@ld/config-*`    | ESLint, TypeScript, Vite, Vitest, Playwright                                                         |
 
 `@ld/ui` ships `globals.css`. Each app imports it and overrides CSS variables in its own theme file.
 

@@ -4,11 +4,11 @@ This is a pnpm + Turborepo monorepo of React/Directus web apps and shared packag
 
 Default to app-local changes.
 
-Files inside packages/* are live shared code.
+Files inside packages/\* are live shared code.
 
 Apps own features, routes, pages, nav, themes, which data mode they run, Directus schemas, and product copy.
 
-Shared packages own reusable UI, utilities, React hooks, form fields, and Directus plumbing.
+Shared packages own reusable UI, utilities, React hooks, form fields, Directus plumbing, and video playback.
 
 shadcn/ui source in `@ld/ui` is the only UI layer. Do not build a second component kit, and do not copy components into `src/components/ui`.
 
@@ -29,4 +29,5 @@ Turborepo configuration, task behavior, and CLI commands can vary between instal
 Read `docs/README.md` inside that installed package first, then read the relevant pages from its `docs/` directory before changing Turborepo configuration or commands. Heed deprecation notices. These bundled docs match the installed package version and are available without network access.
 
 This block is written and re-added by `turbo` before repository-scoped commands when an AI agent is detected. In the Turborepo source repository, its template is defined in `crates/turborepo-cli/src/cli/agent_guidance.rs`. Removing the managed block while updates are enabled means a later qualifying invocation will add it again. Set `"agentGuidance": false` in the root `turbo.json` or `turbo.jsonc` to opt out; this does not remove an existing block. Keep the block committed with your work to avoid an uncommitted change on the next agent invocation.
+
 <!-- END:turborepo-agent-rules -->
