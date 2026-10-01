@@ -20,16 +20,20 @@ Set `VITE_DATA_MODE=live` in `.env.local`, create the `notes` collection, then r
 
 ## Commands
 
-| Command | Purpose |
-|---------|---------|
-| `pnpm dev` | Dev servers (turbo) |
-| `pnpm --filter @ld/app-template dev` | Template app |
-| `pnpm build` | Production builds. Requires `VITE_DATA_MODE=live` |
-| `pnpm lint` / `pnpm ts` / `pnpm test:unit` | Quality checks |
-| `pnpm review` | lint + ts + test:unit + architecture:check |
-| `pnpm create:app` | Scaffold a new app from the template |
-| `pnpm directus:dev` | Start local Directus |
-| `pnpm directus:dev -- down` | Stop local Directus |
+| Command                                    | Purpose                                           |
+| ------------------------------------------ | ------------------------------------------------- |
+| `pnpm dev`                                 | Dev servers (turbo)                               |
+| `pnpm --filter @ld/app-template dev`       | Template app                                      |
+| `pnpm build`                               | Production builds. Requires `VITE_DATA_MODE=live` |
+| `pnpm lint` / `pnpm ts` / `pnpm test:unit` | Quality checks                                    |
+| `pnpm review`                              | lint + ts + test:unit + architecture:check        |
+| `pnpm create:app`                          | Scaffold a new app from the template              |
+| `pnpm directus:dev`                        | Start local Directus                              |
+| `pnpm directus:dev -- down`                | Stop local Directus                               |
+
+## Checks
+
+Push to `main` and pull requests run lint, types, unit tests, the architecture check, and a production build. A weekly audit reports dependency vulnerabilities. Deploy is manual and does not publish anything yet. Every workflow is `contents: read` and does not use secrets.
 
 ## Adding a feature
 
